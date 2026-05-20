@@ -40,4 +40,8 @@
 1. **Клонируйте репозиторий:**
    ```bash
    git clone [https://github.com/your-username/sales-recruiting.git](https://github.com/your-username/sales-recruiting.git)
+<<<<<<< HEAD
    cd sales-recruiting
+=======
+   cd sales-recruiting
+>>>>>>> c16ee053c57e832cac6dff81782646980c937b1a
