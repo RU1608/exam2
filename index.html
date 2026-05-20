@@ -7,6 +7,94 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
+    <section class="bg-blue-200">
     
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+      <div class="bg-slate-900 text-white p-2 font-bold text-xs uppercase leading-tight">
+        Sales<br>Рекрутинг
+      </div>
+      <div class="hidden [@media(min-width:510px)]:flex space-x-6 text-sm font-semibold text-slate-950">
+        <a href="#">Главная</a> <a href="#">О нас</a> <a href="#">Калькулятор</a> <a href="#">Кейсы</a> <a href="#">Контакты</a>
+      </div>
+      <a href="#" class="bg-slate-900 text-white px-4 py-2 rounded text-sm font-medium">
+        📞 Заказать звонок
+      </a>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 py-12 flex flex-col [@media(min-width:510px)]:flex-row items-center gap-8">
+      
+      <div class="w-full [@media(min-width:510px)]:w-1/2 text-center [@media(min-width:510px)]:text-left">
+        <h1 class="text-3xl [@media(min-width:510px)]:text-5xl font-black text-slate-900 uppercase leading-tight mb-4">
+          Управление потенциалом личной команды
+        </h1>
+        <p class="text-gray-700 mb-6">
+          Рыба текст, рыба текст нужен для вида текста, текста пока нет. Текст делает копирайтер.
+        </p>
+
+        <div class="space-y-3 inline-block text-left mb-6">
+          <div class="flex items-start gap-3 text-sm">
+            <span class="bg-slate-900 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mt-0.5">👤</span>
+            <p><strong>Тысячи проверенных топ-менеджеров.</strong> Ваш идеальный РОП уже в базе.</p>
+          </div>
+          <div class="flex items-start gap-3 text-sm">
+            <span class="bg-slate-900 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mt-0.5">🔄</span>
+            <p>Отработанная годами технология обеспечивает <strong>98% успеха</strong></p>
+          </div>
+          <div class="flex items-start gap-3 text-sm">
+            <span class="bg-slate-900 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs mt-0.5">⭐</span>
+            <p><strong>20+ лет опыта в отборе.</strong> Мы отсеиваем, вы выбираете.</p>
+          </div>
+        </div>
+
+        <div>
+          <a href="#" class="inline-block bg-white text-slate-900 font-bold text-sm px-6 py-4 rounded shadow hover:bg-gray-50 w-full [@media(min-width:510px)]:w-auto">
+            Записаться на бесплатную консультацию &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full [@media(min-width:510px)]:w-1/2 flex flex-col items-center justify-end min-h-[400px] bg-slate-300 rounded-t-xl p-6 relative bg-cover bg-center" style="background-image: url('./30708c9024fe4dae8fe01c94613cec699d079558.png');">
+        
+        <div class="bg-white p-4 rounded-xl shadow-lg max-w-sm mb-4">
+          <div class="flex justify-between items-center mb-1">
+            <h4 class="text-xs font-bold text-slate-900">Загрузите требования к работнику</h4>
+            <span class="bg-amber-100 rounded-full text-xs p-1">▲</span>
+          </div>
+          <p class="text-[10px] text-gray-400">Прикрепите или перетащите сюда файл требований к будущему работнику...</p>
+        </div>
+
+        <div class="bg-slate-900 text-white font-bold text-xs uppercase tracking-widest px-6 py-2 rounded-full">
+          Андрей Веселов
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="py-16 max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-black text-slate-900 mb-8 text-center [@media(min-width:510px)]:text-left">
+      Процесс найма сотрудника
+    </h2>
+
+    <div class="grid grid-cols-1 [@media(min-width:510px)]:grid-cols-5 gap-4">
+      
+      <script>
+        const items = ['1 День', '2 День', '3 День', '4 День', '5 День', '6 День', '7 День', '8 День', '9 День', '10 День'];
+        items.forEach(day => {
+          const isSpecial = day === '8 День';
+          document.write(`
+            <div class="${isSpecial ? 'bg-slate-900 text-white shadow-lg' : 'bg-white text-gray-900'} p-5 rounded-xl border border-gray-100 flex flex-col justify-between">
+              <h3 class="font-black text-sm uppercase mb-3 ${isSpecial ? 'text-white' : 'text-slate-900'}">${day}</h3>
+              <ul class="space-y-2 text-xs opacity-90">
+                <li>✓ Глубокий анализ</li>
+                <li>✓ Подписание договора</li>
+                <li>✓ Контрольный созвон</li>
+              </ul>
+            </div>
+          `);
+        });
+      </script>
+
+    </div>
+  </section>
 </body>
 </html>
